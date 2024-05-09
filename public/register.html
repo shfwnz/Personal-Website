@@ -96,22 +96,78 @@
                                                 id="progressBar"></div>
                                         </div>
                                         <div class="tampilan" id="step1">
-                                            <h4 class="mb-3">Registration: Account Details</h4>
-                                            <div class="mb-3">
-                                                <label for="username" class="form-label">Username</label>
-                                                <input type="text" class="form-control" id="username"
-                                                    placeholder="Enter Username">
-                                            </div>
-                                            <!-- Account details form inputs -->
+                                        <h4 class="mb-3">Registration: Account Details</h4>
+                                        <div class="mb-3">
+                                            <label for="username" class="form-label">Username</label>
+                                            <input type="text" class="form-control" id="username"
+                                                placeholder="Enter Username">
                                         </div>
-                                        <div class="tampilan" id="step2" style="display: none;">
-                                            <h3 class="mb-3">Registration: Profile Details</h3>
-                                            <!-- Profile details form inputs -->
+                                        <div class="mb-3">
+                                            <label for="email" class="form-label">Email</label>
+                                            <input type="email" class="form-control" id="email"
+                                                placeholder="Enter Email">
                                         </div>
-                                        <div class="tampilan" id="step3" style="display: none;">
-                                            <h3 class="mb-3">Registration: Extracurricular Activities</h3>
-                                            <!-- Extracurricular activities form inputs -->
+                                        <div class="mb-3">
+                                            <label for="password" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="password"
+                                                placeholder="Enter Password">
                                         </div>
+                                        <div class="mb-3">
+                                            <label for="confirm_password" class="form-label">Confirm Password</label>
+                                            <input type="password" class="form-control" id="confirm_password"
+                                                placeholder="Confirm Password">
+                                        </div>
+                                        <button type="button" class="btn btn-primary"
+                                            onclick="nextStep(2)">Next</button>
+
+                                    </div>
+                                    <div class="tampilan" id="step2" style="display: none;">
+                                        <h3 class="mb-3">Registration: Profile Details</h3>
+                                        <div class="mb-3">
+                                            <label for="fullname" class="form-label">Full Name</label>
+                                            <input type="text" class="form-control" id="fullname"
+                                                placeholder="Enter Full Name">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="class" class="form-label">Kelas/Jurusan</label>
+                                            <select class="form-select" id="class">
+                                                <option selected>...</option>
+                                                <option>SIJA A</option>
+                                                <option>SIJA B</option>
+                                                <option>KA A</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="gender" class="form-label">Gender</label>
+                                            <select class="form-select" id="gender">
+                                                <option selected>...</option>
+                                                <option>Male</option>
+                                                <option>Female</option>
+                                            </select>
+                                        </div>
+                                        <div class="">
+                                            <button type="button" class="btn btn-primary"
+                                                onclick="nextStep(3)">Next</button>
+                                            <button type="button" class="btn btn-warning"
+                                                onclick="previousStep(2)">Back</button>
+                                        </div>
+                                    </div>
+                                    <div class="tampilan" id="step3" style="display: none;">
+                                        <h3 class="mb-3">Registration: Extracurricular Activities</h3>
+                                        <div class="mb-3">
+                                            <label for="extracurricular" class="form-label">Extracurricular
+                                                Activity</label>
+                                            <select class="form-select" id="extracurricular">
+                                                <option selected>...</option>
+                                                <option>Ekstra 1</option>
+                                                <option>Ekstra 2</option>
+                                                <option>Ekstra 3</option>
+                                            </select>
+                                        </div>
+                                        <button type="submit" class="btn btn-success">Register</button>
+                                        <button type="button" class="btn btn-warning"
+                                            onclick="previousStep(3)">Back</button>
+                                    </div>
                                         <div class="divider d-flex align-items-center my-4">
                                             <p class="text-center fw-bold mx-3 mb-0">Or</p>
                                         </div>
