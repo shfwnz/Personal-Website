@@ -28,19 +28,37 @@
 // });
 
 // DarkMode
-const mode = document.querySelector('#mode');
+const desktopModeToggle = document.querySelector('#desktop-mode'); // Menggunakan id desktop-mode untuk toggle mode
+const mobileModeToggle = document.querySelector('#mobile-mode');
 const html = document.querySelector('html');
 
+html.classList.add('dark'); // Menambahkan kelas 'dark' secara default
 
-html.classList.add('dark');
-
-mode.addEventListener('click', function () {
-    if (mode.checked) {
-        html.classList.add('dark');
-    } else {
-        html.classList.remove('dark');
-    }
+desktopModeToggle.addEventListener('click', function () {
+  html.classList.toggle('dark', desktopModeToggle.checked); // Menggunakan toggle untuk menambah atau menghapus kelas 'dark'
 });
+
+mobileModeToggle.addEventListener('click', function () {
+    html.classList.toggle('dark', mobileModeToggle.checked); // Menggunakan toggle untuk menambah atau menghapus kelas 'dark'
+});
+
+
+
+// Hamburger
+const menuToggle = document.getElementById('mobile-menu-toggle');
+const mobileMenu = document.getElementById('mobile-menu');
+const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+
+menuToggle.addEventListener('click', function () {
+  mobileMenu.classList.toggle('translate-x-full'); // Toggle menu slide-in
+  mobileMenuOverlay.classList.toggle('hidden'); // Toggle overlay visibility
+});
+
+mobileMenuOverlay.addEventListener('click', function () {
+  mobileMenu.classList.add('translate-x-full'); // Menyembunyikan menu ketika overlay diklik
+  mobileMenuOverlay.classList.add('hidden'); // Menyembunyikan overlay
+});
+
 
 // CopyRight
 const copyrightElement = document.getElementById('copyright');

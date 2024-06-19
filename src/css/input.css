@@ -21,7 +21,11 @@
     background: #888888; 
 }
 
-input#mode:checked ~ label div.toggle-circle {
+input#desktop-mode:checked ~ label div.toggle-circle {
+    @apply translate-x-3
+}
+
+input#mobile-mode:checked ~ label div.toggle-circle {
     @apply translate-x-3
 }
 
