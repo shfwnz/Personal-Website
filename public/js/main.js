@@ -48,6 +48,21 @@ const currentYear = new Date().getFullYear();
 
 copyrightElement.textContent = `Copyright © ${currentYear} Shafwan Ilham Dzaky`;
 
+// back to top
+
+document.addEventListener('DOMContentLoaded', function () {
+    const toTopButton = document.getElementById('to-top');
+
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 300) {
+            toTopButton.classList.remove('hidden');
+        } else {
+            toTopButton.classList.add('hidden');
+        }
+    });
+});
+
+
 // Animate-Typing
 const words = ["Student", "Web Dev", "White"];
 let i = 0;

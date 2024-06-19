@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -7,20 +7,19 @@
     <title>Shanz</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/custom.css">
-
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-
     <!-- icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body class="dark:bg-dark dark:text-white">
-    <nav class="flex items-center justify-between py-6 mx-20">
+    <nav class="flex items-center justify-between py-6 mx-4 md:mx-20">
         <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse group">
             <img src="assets/img/Kowalski.jpg" class="h-8 rounded-full" alt="PP" />
             <span class="flex flex-row items-center self-center justify-center font-semibold whitespace-nowrap">
@@ -28,7 +27,7 @@
                 <img src="assets/img/verified.png" class="w-6 ps-1" alt="verified">
             </span>
         </a>
-        <ul class="flex space-x-6">
+        <ul class="hidden space-x-6 md:flex">
             <li><a href="index.html" class="text">Home</a></li>
             <li><a href="project.html" class="text">Project</a></li>
             <li><a href="about.html" class="text">About</a></li>
@@ -43,84 +42,139 @@
             </label>
         </div>
     </nav>
-    <main class="px-4 sm:px-6 lg:px-20">
-        <section class="w-full">
+    <main class="px-4 md:px-6 lg:px-20">
+        <section class="w-auto">
             <div class="flex flex-col mx-auto">
-                <div class="flex justify-between mt-12">
-                    <div class="flex items-center">
-                        <span class="text-3xl font-bold capitalize">
+                <div class="flex flex-col items-start justify-center mt-8 md:items-start md:mt-12">
+                    <div class="flex flex-row items-center">
+                        <span class="text-2xl font-bold capitalize md:text-3xl">
                             Let's Connect..
                         </span>
                         <img src="https://github.com/0xAbdulKhalid/0xAbdulKhalid/raw/main/assets/mdImages/handshake.gif"
-                            width="80">
+                            class="w-24 md:w-32 md:mt-0 md:ml-4" alt="Handshake">
                     </div>
                 </div>
-                <div class="py-2 capitalize">
-                    <p class="text-gray-500">Feel free to contact me, I will reply as soon as possible and let's discuss
-                        how we can work together.</p>
+                <div class="flex py-2 capitalize text-start md:items-start">
+                    <p class="text-sm text-gray-500">Feel free to contact me, I will reply as soon as possible and let's
+                        discuss how we can work together.</p>
                 </div>
-                <hr class="px-2 my-2">
-                <div class="flex flex-col mt-12 mb-6 sm:flex-row">
-                    <div class="flex flex-col items-center justify-start w-full sm:w-1/2">
-                        <span class="mb-4 text-3xl capitalize">Connect Me With</span>
-                        <div class="flex flex-col items-center gap-4 sm:flex-row">
-                            <div class="border border-gray-500 rounded shadow-lg bg-border dark:bg-border dark:border-transparent hover:scale-110">
-                                <a class="inline-flex items-center justify-center p-2" target="_blank" href="">
+                <hr class="my-2">
+                <div class="flex flex-col mt-8 mb-6 md:flex-row">
+                    <div class="flex flex-col items-center w-full md:items-center md:w-1/2">
+                        <span class="text-xl capitalize md:text-3xl">Connect Me With</span>
+                        <div class="hidden gap-4 md:flex md:flex-row md:mt-8">
+                            <div
+                                class="border border-transparent md:border-transparent rounded shadow-lg bg-[#8454B4] hover:scale-110">
+                                <a class="inline-flex items-center justify-center p-2" target="_blank" href="#">
                                     <img class="w-12" src="assets/img/flaticon/icons8-insta-64.png">
                                     <span class="px-2 font-bold text-white">Instagram</span>
                                 </a>
                             </div>
-                            <div class="border border-gray-500 rounded bg-border dark:bg-border dark:border-transparent hover:scale-110">
-                                <a class="inline-flex items-center justify-center p-2" target="_blank" href="">
+                            <div
+                                class="border border-transparen md:border-transparent rounded bg-[#000000] hover:scale-110">
+                                <a class="inline-flex items-center justify-center p-2" target="_blank" href="#">
                                     <img class="w-12" src="assets/img/github.png">
                                     <span class="px-2 font-bold text-white">Github</span>
                                 </a>
                             </div>
-                            <div class="bg-[#0078D4] border border-gray-500 rounded dark:bg-border dark:border-transparent hover:scale-110">
-                                <a class="inline-flex items-center justify-center p-2" target="_blank" href="">
+                            <div
+                                class="bg-[#0078D4] border border-transparen md:border-transparent rounded hover:scale-110">
+                                <a class="inline-flex items-center justify-center p-2" target="_blank" href="#">
                                     <img class="w-12"
-                                        src="https://img.icons8.com/?size=100&id=xuvGCOXi8Wyg&format=png&color=000000">
+                                        src="assets/img/flaticon/icons8-linkedin-30.png">
                                     <span class="px-2 font-bold text-white">Linkedin</span>
                                 </a>
                             </div>
                         </div>
-                        <div class="flex flex-row gap-4 mt-4 sm:mt-0">
-                            <div class="border border-gray-500 rounded bg-border dark:bg-border dark:border-transparent hover:scale-110">
-                                <a class="inline-flex items-center justify-center p-2" target="_blank" href="">
-                                    <img class="w-12" src="https://img.icons8.com/?size=100&id=30998&format=png&color=000000">
+                        <div class="hidden gap-4 md:flex md:flex-row md:mt-4">
+                            <div
+                                class="border border-transparen md:border-transparent rounded bg-[#8C9EFF] hover:scale-110">
+                                <a class="inline-flex items-center justify-center p-2" target="_blank" href="#">
+                                    <img  class="w-12"
+                                        src="assets/img/flaticon/icons8-discord-50.png">
                                     <span class="px-2 font-bold text-white">Discord</span>
                                 </a>
                             </div>
-                            <div class="border border-gray-500 rounded bg-border dark:bg-border dark:border-transparent hover:scale-110">
-                                <a class="inline-flex items-center justify-center p-2" target="_blank" href="">
-                                    <img class="w-12" src="https://img.icons8.com/?size=100&id=63306&format=png&color=000000">
+                            <div
+                                class="border border-transparen md:border-transparent rounded bg-[#29B6F6] hover:scale-110">
+                                <a class="inline-flex items-center justify-center p-2" target="_blank" href="#">
+                                    <img class="w-12"
+                                        src="assets/img/flaticon/icons8-telegram-64.png">
                                     <span class="px-2 font-bold text-white">Telegram</span>
                                 </a>
                             </div>
                         </div>
+                        <div class="block mt-4 md:hidden">
+                            <div class="flex flex-col gap-4 md:flex-row md:mt-8 ">
+                                <div class="flex flex-row gap-2">
+                                    <div
+                                        class="w-full border border-gray-500 rounded shadow-lg bg-border dark:bg-border dark:border-transparent hover:scale-110">
+                                        <a class="inline-flex items-center justify-center p-2" target="_blank" href="#">
+                                            <img class="w-12" src="assets/img/flaticon/icons8-insta-64.png">
+                                            <span class="px-2 font-bold text-white">Instagram</span>
+                                        </a>
+                                    </div>
+                                    <div
+                                        class="w-full border border-gray-500 rounded bg-border dark:bg-border dark:border-transparent hover:scale-110">
+                                        <a class="inline-flex items-center justify-center p-2" target="_blank" href="#">
+                                            <img class="w-12" src="assets/img/github.png">
+                                            <span class="px-2 font-bold text-white">Github</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="flex flex-row gap-2">
+                                    <div
+                                        class="w-full border border-gray-500 rounded bg-border dark:bg-border dark:border-transparent hover:scale-110">
+                                        <a class="inline-flex items-center justify-center p-2" target="_blank" href="#">
+                                            <img class="w-12"
+                                                src="https://img.icons8.com/?size=100&id=30998&format=png&color=000000">
+                                            <span class="px-2 font-bold text-white">Discord</span>
+                                        </a>
+                                    </div>
+                                    <div
+                                        class="w-full border border-gray-500 rounded bg-border dark:bg-border dark:border-transparent hover:scale-110">
+                                        <a class="inline-flex items-center justify-center p-2" target="_blank" href="#">
+                                            <img class="w-12"
+                                                src="https://img.icons8.com/?size=100&id=63306&format=png&color=000000">
+                                            <span class="px-2 font-bold text-white">Telegram</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div
+                                        class="bg-[#0078D4] border border-gray-500 rounded dark:bg-border dark:border-transparent hover:scale-110 w-full flex items-center justify-center">
+                                        <a class="inline-flex items-center justify-center p-2" target="_blank" href="#">
+                                            <img class="w-12"
+                                                src="https://img.icons8.com/?size=100&id=xuvGCOXi8Wyg&format=png&color=000000">
+                                            <span class="px-2 font-bold text-white">Linkedin</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex flex-col items-center justify-start w-full mt-8 sm:w-1/2 sm:mt-0">
-                        <span class="mb-4 text-3xl">Or Send Me a Message</span>
-                        <form class="max-w-sm mx-auto">
-                            <div class="flex flex-col gap-2 sm:flex-row">
-                                <div class="mb-5">
+                    <div class="flex flex-col items-center justify-start w-full mt-8 md:items-center md:w-1/2 md:mt-0">
+                        <span class="mb-4 text-xl md:mb-8 md:text-3xl">Or Send Me a Message</span>
+                        <form class="w-full max-w-sm mx-auto">
+                            <div class="flex flex-col md:gap-2 md:flex-row">
+                                <div class="w-full mb-4">
                                     <input type="email" id="email"
                                         class="border border-gray-500 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-border dark:text-white dark:focus:ring-blue-500 dark:border-transparent"
                                         placeholder="Email*" required />
                                 </div>
-                                <div class="mb-5">
+                                <div class="w-full mb-4">
                                     <input type="text" id="subject"
                                         class="border border-gray-500 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-border dark:text-white dark:focus:ring-blue-500 dark:border-transparent"
                                         placeholder="Subject*" required />
                                 </div>
                             </div>
-                            <div class="mb-5">
+                            <div class="w-full mb-4">
                                 <textarea id="message" rows="6"
                                     class="block p-2.5 w-full text-sm text-black border-gray-500 rounded-lg border dark:border-transparent focus:ring-blue-500 focus:border-blue-500 dark:bg-border dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                     placeholder="Message*"></textarea>
                             </div>
                             <button type="submit"
-                                class="text-white relative inline-flex items-center justify-center px-6 py-2 overflow-hidden font-mono font-medium tracking-tighter bg-[#525252] rounded-lg dark:text-white dark:bg-secondary group">
+                                class="relative inline-flex items-center justify-center px-6 py-2 overflow-hidden font-mono font-medium tracking-tighter bg-[#525252] rounded-lg text-white dark:text-white dark:bg-secondary group">
                                 <span
                                     class="absolute w-0 h-0 transition-all duration-500 ease-out bg-green-500 rounded-full group-hover:w-56 group-hover:h-56"></span>
                                 <span
@@ -133,13 +187,20 @@
             </div>
         </section>
     </main>
-    <footer class="flex flex-col items-center justify-center mx-20">
+    <footer class="flex flex-col items-center justify-center px-4 md:px-6 lg:px-20">
         <hr class="w-full my-3 mt-8 border-t-2 dark:border-gray-400">
         <div class="dark:text-white p-7">
             <p id="copyright" class="text-sm"></p>
         </div>
     </footer>
 </body>
+
 <script src="./js/main.js"></script>
+<script>
+    // Script untuk toggle menu di mobile
+    document.getElementById('menu-toggle').addEventListener('change', function () {
+        document.getElementById('menu').classList.toggle('hidden');
+    });
+</script>
 
 </html>

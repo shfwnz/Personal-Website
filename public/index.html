@@ -16,7 +16,7 @@
 </head>
 
 <body class="dark:bg-dark dark:text-white">
-  <header class="w-full h-screen">
+  <header id="home" class="w-full h-screen">
     <nav class="flex items-center justify-between py-6 mx-4 md:mx-20">
       <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse group">
         <img src="assets/img/Kowalski.jpg" class="h-8 rounded-full" alt="PP" />
@@ -56,21 +56,25 @@
         <div class="flex flex-col items-center justify-start mt-6 md:w-1/2 md:mt-0">
           <div class="relative inline-block">
             <img src="./assets/img/me.png" alt="student" class="block w-full" style="width: 225px;">
-            <div class="absolute bottom-0 h-24 rounded-md bg-gradient-to-b from-transparent to-gray-700"></div>
-            <div class="absolute bottom-0 px-3 py-0 text-center text-white transform -translate-x-1/2 rounded left-1/2">
-              <span class="text-3xl italic font-bold md:text-5xl">Student</span>
+            <div
+              class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white dark:from-dark to-transparent rounded-b-md">
+            </div>
+            <div class="absolute px-3 py-0 text-center text-gray-500 transform -translate-x-1/2 dark:text-white bottom-1 left-1/2">
+              <span class="text-3xl italic font-bold md:text-5xl"></span>
             </div>
           </div>
         </div>
+
       </div>
-      <div class="flex-col items-center justify-end hidden mx-auto mt-12 md:flex">
-        <img id="invert" src="./assets/img/mouse.png" alt="scroll" class="mb-2" style="width: 25px;">
-        <span class="mt-1 mb-2 capitalize">scroll down</span>
-        <a href="#project">
-          <img id="invert" src="./assets/img/down.png" alt="scroll" class="mt-auto mb-0 animate-bounce"
-            style="width: 25px;">
-        </a>
-      </div>
+    </div>
+    <div class="flex-col items-center justify-end hidden mx-auto mt-12 md:flex">
+      <img id="invert" src="./assets/img/mouse.png" alt="scroll" class="mb-2" style="width: 25px;">
+      <span class="mt-1 mb-2 capitalize">scroll down</span>
+      <a href="#project">
+        <img id="invert" src="./assets/img/down.png" alt="scroll" class="mt-auto mb-0 animate-bounce"
+          style="width: 25px;">
+      </a>
+    </div>
     </div>
   </header>
   <main id="project" class="w-full md:h-screen">
@@ -91,12 +95,12 @@
           </a>
         </div>
       </div>
-      <div class="flex flex-col justify-center px-2 space-y-8 mt-14 md:space-y-0 md:space-x-4 md:flex-row">
+      <div class="flex flex-col justify-start px-2 space-y-8 mt-14 md:space-y-0 md:space-x-4 md:flex-row">
         <div
-          class="max-w-sm overflow-hidden transition-transform transform border border-transparent rounded-lg shadow-lg duration-550 hover:scale-105">
+          class="hidden w-full max-w-sm overflow-hidden transition-transform transform border border-transparent rounded-lg shadow-lg duration-550 hover:scale-105">
           <div class="relative group">
             <a href="">
-              <img class="object-cover w-full h-48 rounded-t-lg hover:blur-sm" src="./assets/img/white.jpg"
+              <img class="object-cover w-full h-48 rounded-t-lg hover:blur-sm" src="./assets/img/epress.png"
                 alt="Project-Img" />
               <div
                 class="absolute inset-0 flex items-center justify-center transition-opacity duration-500 bg-black opacity-0 bg-opacity-60 group-hover:opacity-100">
@@ -116,10 +120,10 @@
           </div>
         </div>
         <div
-          class="max-w-sm overflow-hidden transition-transform transform border border-transparent rounded-lg shadow-lg duration-550 hover:scale-105">
+          class="w-full max-w-sm overflow-hidden transition-transform transform border border-transparent rounded-lg shadow-lg duration-550 hover:scale-105">
           <div class="relative group">
             <a href="">
-              <img class="object-cover w-full h-48 rounded-t-lg hover:blur-sm" src="./assets/img/white.jpg"
+              <img class="object-cover w-full h-48 rounded-t-lg group-hover:blur-sm" src="./assets/img/epress.png"
                 alt="Project-Img" />
               <div
                 class="absolute inset-0 flex items-center justify-center transition-opacity duration-500 bg-black opacity-0 bg-opacity-60 group-hover:opacity-100">
@@ -132,17 +136,17 @@
           </div>
           <div class="p-5 dark:bg-secondary">
             <a href="#">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight">Lorem Ipsum </h5>
+              <h5 class="mb-2 text-2xl font-bold tracking-tight">EPRESS </h5>
             </a>
-            <p class="mb-3 font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua</p>
+            <p class="mb-3 font-normal capitalize">Extracurricular attendance website built with bootstrap, PHP and
+              javascript</p>
           </div>
         </div>
         <div
-          class="max-w-sm overflow-hidden transition-transform transform border border-transparent rounded-lg shadow-lg duration-550 hover:scale-105">
+          class="w-full max-w-sm overflow-hidden transition-transform transform border border-transparent rounded-lg shadow-lg duration-550 hover:scale-105">
           <div class="relative group">
             <a href="">
-              <img class="object-cover w-full h-48 rounded-t-lg hover:blur-sm" src="./assets/img/white.jpg"
+              <img class="object-cover w-full h-48 rounded-t-lg hover:blur-sm group-hover:blur-sm" src="./assets/img/ini.png"
                 alt="Project-Img" />
               <div
                 class="absolute inset-0 flex items-center justify-center transition-opacity duration-500 bg-black opacity-0 bg-opacity-60 group-hover:opacity-100">
@@ -153,12 +157,11 @@
               </div>
             </a>
           </div>
-          <div class="p-5 dark:bg-secondary">
+          <div class="h-full p-5 dark:bg-secondary">
             <a href="#">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight">Lorem Ipsum </h5>
+              <h5 class="mb-2 text-2xl font-bold tracking-tight">shfwn.my.id </h5>
             </a>
-            <p class="mb-3 font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua</p>
+            <p class="mb-3 font-normal">Personal Website built with tailwindcss and JavaScript</p>
           </div>
         </div>
       </div>
@@ -184,25 +187,31 @@
                     assumenda eaque?
                   </p>
                   <div class="flex flex-col justify-between py-4 pr-5 md:flex-row">
-                    <div class="relative inline-flex items-center justify-start w-full px-6 py-3 mb-4 overflow-hidden font-medium transition-all border rounded md:border-none group md:mb-0 md:w-auto">
+                    <div
+                      class="relative inline-flex items-center justify-start w-full px-6 py-3 mb-4 overflow-hidden font-medium transition-all border rounded md:border-none group md:mb-0 md:w-auto">
                       <a href="#" class="w-full">
-                        <span class="w-48 h-48 rounded rotate-[-40deg] bg-secondary dark:bg-white absolute bottom-0 left-0 -translate-x-full translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0 ease-out duration-700 transition-all"></span>
-                        <span class="relative flex flex-row w-full text-left transition-colors duration-300 ease-in-out group-hover:text-white dark:group-hover:text-black">
-                          <span class="hidden md:inline">More About Me</span> 
+                        <span
+                          class="w-48 h-48 rounded rotate-[-40deg] bg-secondary dark:bg-white absolute bottom-0 left-0 -translate-x-full translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0 ease-out duration-700 transition-all"></span>
+                        <span
+                          class="relative flex flex-row w-full text-left transition-colors duration-300 ease-in-out group-hover:text-white dark:group-hover:text-black">
+                          <span class="hidden md:inline">More About Me</span>
                           <span class="block md:hidden">About me</span>
                         </span>
                       </a>
                     </div>
-                    <div class="relative inline-flex items-center justify-start w-full px-6 py-3 overflow-hidden font-medium transition-all border rounded md:border-none group md:w-auto">
+                    <div
+                      class="relative inline-flex items-center justify-start w-full px-6 py-3 overflow-hidden font-medium transition-all border rounded md:border-none group md:w-auto">
                       <a href="#" class="w-full">
-                        <span class="w-48 h-48 rounded rotate-[-40deg] bg-secondary dark:bg-white absolute bottom-0 left-0 -translate-x-full translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0 ease-out duration-700 transition-all"></span>
-                        <span class="relative w-full text-left transition-colors duration-300 ease-in-out group-hover:text-white dark:group-hover:text-black">
+                        <span
+                          class="w-48 h-48 rounded rotate-[-40deg] bg-secondary dark:bg-white absolute bottom-0 left-0 -translate-x-full translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0 ease-out duration-700 transition-all"></span>
+                        <span
+                          class="relative w-full text-left transition-colors duration-300 ease-in-out group-hover:text-white dark:group-hover:text-black">
                           Contact Me
                         </span>
                       </a>
                     </div>
                   </div>
-                  
+
                 </div>
                 <div class="flex items-center justify-center mt-8 md:mt-0">
                   <div class="max-w-full p-0 border-l-0 rounded-lg shadow-lg md:border-l-2 dark:bg-border">
@@ -228,6 +237,13 @@
       </div>
     </div>
   </footer>
+
+  <!-- Back -->
+  <a href="#home"
+    class="fixed bottom-4 right-4 z-[9999] hidden h-14 w-14 items-center justify-center rounded-full bg-secondary p-4 hover:animate-pulse"
+    id="to-top">
+    <span class="block w-5 h-5 rotate-45 border-t-2 border-l-2 border-white"></span>
+  </a>
 </body>
 <script src="./js/main.js"></script>
 
