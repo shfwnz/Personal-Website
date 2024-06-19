@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev":"npx tailwindcss -i ./src/css/input.css -o ./public/css/style.css --watch"
+    "dev" : "npx tailwindcss -i ./src/css/input.css -o ./public/css/style.css --watch"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,8 @@
   "devDependencies": {
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.38",
+    "prettier": "^3.3.2",
+    "prettier-plugin-tailwindcss": "^0.6.5",
     "tailwindcss": "^3.4.3"
   }
 }

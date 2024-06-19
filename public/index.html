@@ -1,14 +1,234 @@
 <!doctype html>
-<html>
+<html class="scroll-smooth">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shanz</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
 </head>
-<body>
-  <h1 class="text-3xl bg-yellow-600">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore fuga asperiores deserunt saepe quam, temporibus animi accusantium error libero. Eum tenetur eos ea consequatur deserunt ut minima laudantium facere incidunt?
-  </h1>
-  <p class="bg-black m-7 underline">test</p>
+
+<body class="dark:bg-dark dark:text-white">
+  <header class="w-full h-screen">
+    <nav class="flex items-center justify-between py-6 mx-4 md:mx-20">
+      <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse group">
+        <img src="assets/img/Kowalski.jpg" class="h-8 rounded-full" alt="PP" />
+        <span class="flex flex-row items-center self-center justify-center font-semibold whitespace-nowrap">
+          Shanz
+          <img src="assets/img/verified.png" class="w-6 ps-1" alt="verified">
+        </span>
+      </a>
+      <ul class="hidden space-x-6 md:flex">
+        <li><a href="index.html" class="text">Home</a></li>
+        <li><a href="project.html" class="text">Project</a></li>
+        <li><a href="about.html" class="text">About</a></li>
+        <li><a href="contact.html" class="text">Contact</a></li>
+      </ul>
+      <div class="flex">
+        <input type="checkbox" class="hidden" id="mode" checked />
+        <label for="mode">
+          <div class="flex items-center h-5 p-1 rounded-full cursor-pointer w-9 bg-slate-500">
+            <div class="w-4 h-4 transition duration-300 ease-in-out bg-white rounded-full toggle-circle"> </div>
+          </div>
+        </label>
+      </div>
+    </nav>
+    <div class="flex flex-col py-6 mx-4 my-12 md:mx-12 lg:my-12">
+      <div class="flex flex-col md:flex-row">
+        <div class="flex flex-col items-center justify-start md:w-1/2">
+          <div class="py-12 italic text-center md:text-right md:ps-12">
+            <h1 class="text-5xl font-bold uppercase md:text-7xl">welcome</h1>
+            <div class="inline-flex mt-0 text-3xl">
+              <div class="mr-2 static-text">
+                I'm a
+              </div>
+              <div id="job" class="overflow-hidden animate-typing whitespace-nowrap"></div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col items-center justify-start mt-6 md:w-1/2 md:mt-0">
+          <div class="relative inline-block">
+            <img src="./assets/img/me.png" alt="student" class="block w-full" style="width: 225px;">
+            <div class="absolute bottom-0 h-24 rounded-md bg-gradient-to-b from-transparent to-gray-700"></div>
+            <div class="absolute bottom-0 px-3 py-0 text-center text-white transform -translate-x-1/2 rounded left-1/2">
+              <span class="text-3xl italic font-bold md:text-5xl">Student</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex-col items-center justify-end hidden mx-auto mt-12 md:flex">
+        <img id="invert" src="./assets/img/mouse.png" alt="scroll" class="mb-2" style="width: 25px;">
+        <span class="mt-1 mb-2 capitalize">scroll down</span>
+        <a href="#project">
+          <img id="invert" src="./assets/img/down.png" alt="scroll" class="mt-auto mb-0 animate-bounce"
+            style="width: 25px;">
+        </a>
+      </div>
+    </div>
+  </header>
+  <main id="project" class="w-full md:h-screen">
+    <div class="flex flex-col mx-4 md:mx-20">
+      <div class="flex flex-row items-center justify-between space-y-4 md:flex-row mt-14 md:space-y-0 md:space-x-4">
+        <div class="flex items-center">
+          <span class="flex flex-row items-center text-xl font-bold capitalize md:text-2xl">
+            <img id="invert" src="assets/img/flaticon/rocket-white.png" alt="roket" class="w-6 md:w-8">
+            Recent project
+          </span>
+        </div>
+        <div class="flex items-center">
+          <a href="project.html" class="flex flex-row items-center justify-center capitalize">
+            view all
+            <div class="px-2">
+              <img id="invert" src="assets/img/flaticon/icons8-arrow-24.png" alt="arrow" class="w-4 md:w-6">
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="flex flex-col justify-center px-2 space-y-8 mt-14 md:space-y-0 md:space-x-4 md:flex-row">
+        <div
+          class="max-w-sm overflow-hidden transition-transform transform border border-transparent rounded-lg shadow-lg duration-550 hover:scale-105">
+          <div class="relative group">
+            <a href="">
+              <img class="object-cover w-full h-48 rounded-t-lg hover:blur-sm" src="./assets/img/white.jpg"
+                alt="Project-Img" />
+              <div
+                class="absolute inset-0 flex items-center justify-center transition-opacity duration-500 bg-black opacity-0 bg-opacity-60 group-hover:opacity-100">
+                <span class="flex flex-row items-center text-lg text-white">
+                  View Project
+                  <img class="px-2" src="assets/img/flaticon/icons8-arrow-24.png" alt="">
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="p-5 dark:bg-secondary">
+            <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight">Lorem Ipsum </h5>
+            </a>
+            <p class="mb-3 font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua</p>
+          </div>
+        </div>
+        <div
+          class="max-w-sm overflow-hidden transition-transform transform border border-transparent rounded-lg shadow-lg duration-550 hover:scale-105">
+          <div class="relative group">
+            <a href="">
+              <img class="object-cover w-full h-48 rounded-t-lg hover:blur-sm" src="./assets/img/white.jpg"
+                alt="Project-Img" />
+              <div
+                class="absolute inset-0 flex items-center justify-center transition-opacity duration-500 bg-black opacity-0 bg-opacity-60 group-hover:opacity-100">
+                <span class="flex flex-row items-center text-lg text-white">
+                  View Project
+                  <img class="px-2" src="assets/img/flaticon/icons8-arrow-24.png" alt="">
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="p-5 dark:bg-secondary">
+            <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight">Lorem Ipsum </h5>
+            </a>
+            <p class="mb-3 font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua</p>
+          </div>
+        </div>
+        <div
+          class="max-w-sm overflow-hidden transition-transform transform border border-transparent rounded-lg shadow-lg duration-550 hover:scale-105">
+          <div class="relative group">
+            <a href="">
+              <img class="object-cover w-full h-48 rounded-t-lg hover:blur-sm" src="./assets/img/white.jpg"
+                alt="Project-Img" />
+              <div
+                class="absolute inset-0 flex items-center justify-center transition-opacity duration-500 bg-black opacity-0 bg-opacity-60 group-hover:opacity-100">
+                <span class="flex flex-row items-center text-lg text-white">
+                  View Project
+                  <img class="px-2" src="assets/img/flaticon/icons8-arrow-24.png" alt="">
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="p-5 dark:bg-secondary">
+            <a href="#">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight">Lorem Ipsum </h5>
+            </a>
+            <p class="mb-3 font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="w-full md:h-screen">
+    <div class="gap-10 mx-4 md:mx-20 h-3/4">
+      <div class="flex flex-row items-center justify-center px-2">
+        <div id="about"
+          class="flex items-center justify-start mt-20 border-2 border-gray-500 rounded-lg dark:bg-secondary dark:border-transparent">
+          <div class="h-full max-w-full p-0">
+            <div class="px-4 py-8 md:px-10">
+              <div class="flex flex-col md:flex-row">
+                <div class="flex flex-col">
+                  <div class="pt-2">
+                    <span class="text-2xl capitalize md:text-4xl">I'm ready to be hired in your <span
+                        class="text-blue-500">project.</span></span>
+                  </div>
+                  <hr class="my-3 border-gray-300">
+                  <p class="hidden py-3 text-gray-500 md:flex">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, non beatae earum ex voluptatibus
+                    culpa fugit! Aliquam eum dicta quisquam sequi, atque similique animi. Eius quibusdam iure possimus
+                    assumenda eaque?
+                  </p>
+                  <div class="flex flex-col justify-between py-4 pr-5 md:flex-row">
+                    <div class="relative inline-flex items-center justify-start w-full px-6 py-3 mb-4 overflow-hidden font-medium transition-all border rounded md:border-none group md:mb-0 md:w-auto">
+                      <a href="#" class="w-full">
+                        <span class="w-48 h-48 rounded rotate-[-40deg] bg-secondary dark:bg-white absolute bottom-0 left-0 -translate-x-full translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0 ease-out duration-700 transition-all"></span>
+                        <span class="relative flex flex-row w-full text-left transition-colors duration-300 ease-in-out group-hover:text-white dark:group-hover:text-black">
+                          <span class="hidden md:inline">More About Me</span> 
+                          <span class="block md:hidden">About me</span>
+                        </span>
+                      </a>
+                    </div>
+                    <div class="relative inline-flex items-center justify-start w-full px-6 py-3 overflow-hidden font-medium transition-all border rounded md:border-none group md:w-auto">
+                      <a href="#" class="w-full">
+                        <span class="w-48 h-48 rounded rotate-[-40deg] bg-secondary dark:bg-white absolute bottom-0 left-0 -translate-x-full translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0 ease-out duration-700 transition-all"></span>
+                        <span class="relative w-full text-left transition-colors duration-300 ease-in-out group-hover:text-white dark:group-hover:text-black">
+                          Contact Me
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="flex items-center justify-center mt-8 md:mt-0">
+                  <div class="max-w-full p-0 border-l-0 rounded-lg shadow-lg md:border-l-2 dark:bg-border">
+                    <div class="flex flex-col justify-between px-12 py-4">
+                      <span class="my-3 text-2xl capitalize md:text-3xl">
+                        Project <span class="text-blue-500">Complete.</span>
+                      </span>
+                      <hr class="my-3">
+                      <div id="countdown" class="p-4 text-4xl font-bold text-center md:text-5xl"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="contact" class="flex flex-col items-center justify-center px-2 mx-4 mt-4 md:mx-20 h-1/4">
+      <hr class="w-full my-3 border-t-2 border-black dark:border-white">
+      <div class="p-5 dark:text-white">
+        <p id="copyright" class="text-sm"></p>
+      </div>
+    </div>
+  </footer>
 </body>
+<script src="./js/main.js"></script>
+
 </html>
