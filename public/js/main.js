@@ -1,4 +1,4 @@
-//DarkMode
+// DarkMode
 document.addEventListener('DOMContentLoaded', function () {
     const desktopModeToggle = document.querySelector('#desktop-mode');
     const mobileModeToggle = document.querySelector('#mobile-mode');
@@ -31,12 +31,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 mobileModeToggle.checked = darkModeEnabled;
                 console.log('Dark mode enabled:', darkModeEnabled);
             } else {
-                // Set default mode to dark if no preference is saved
-                html.classList.add('dark');
-                desktopModeToggle.checked = true;
-                mobileModeToggle.checked = true;
-                saveModePreference(true);
-                console.log('Default dark mode enabled');
+                // Jika tidak ada preferensi tersimpan, gunakan preferensi perangkat
+                const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                html.classList.toggle('dark', prefersDarkScheme);
+                desktopModeToggle.checked = prefersDarkScheme;
+                mobileModeToggle.checked = prefersDarkScheme;
+                console.log('Using device preference for dark mode:', prefersDarkScheme);
             }
         } catch (error) {
             console.error('Error loading from localStorage:', error);
