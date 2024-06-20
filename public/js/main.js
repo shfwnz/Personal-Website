@@ -1,32 +1,3 @@
-// // Pre-Load Page
-// document.addEventListener("DOMContentLoaded", function () {
-//     var progressBar = document.getElementById('progress');
-//     var navigateButton = document.getElementById('navigate-button');
-
-//     // Fungsi untuk menampilkan progress bar
-//     function showProgressBar() {
-//         progressBar.style.width = '0%'; // Set ulang lebar progress bar menjadi 0%
-//         progressBar.style.opacity = '1'; // Tampilkan progress bar dengan opacity 1
-//     }
-
-//     // Fungsi untuk menyembunyikan progress bar
-//     function hideProgressBar() {
-//         progressBar.style.opacity = '0'; // Sembunyikan progress bar dengan opacity 0
-//     }
-
-//     // Event listener untuk klik pada tombol
-//     navigateButton.addEventListener('click', function () {
-//         // Tampilkan progress bar saat tombol ditekan
-//         showProgressBar();
-
-//         // Simulasi pengalihan halaman dengan timeout
-//         setTimeout(function () {
-//             // Redirect to actual page (Project page dalam contoh ini)
-//             window.location.href = "project.html"; // Ganti dengan halaman yang sesuai
-//         }, 1000); // Contoh timeout 1000 milidetik (1 detik). Sesuaikan dengan kebutuhan.
-//     });
-// });
-
 // DarkMode
 document.addEventListener('DOMContentLoaded', function () {
     const desktopModeToggle = document.querySelector('#desktop-mode');
@@ -124,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 // Animate-Typing
-const words = ["Student", "Web Dev", "White"];
+const words = ["FrontEnd Dev", "Web Dev", "Student"];
 let i = 0;
 let j = 0;
 let currentWord = "";
