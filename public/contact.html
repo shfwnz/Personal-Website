@@ -16,6 +16,17 @@
         rel="stylesheet">
     <!-- icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "0cX2FCkzkSde3xbOm",
+            });
+        })();
+    </script>
 </head>
 
 <body class="dark:bg-dark dark:text-white">
@@ -195,16 +206,16 @@
                     </div>
                     <div class="flex flex-col items-center justify-start w-full mt-8 md:items-center md:w-1/2 md:mt-0">
                         <span class="mb-4 text-xl md:mb-8 md:text-3xl">Or Send Me a Message</span>
-                        <form class="w-full max-w-sm mx-auto">
+                        <form class="w-full max-w-sm mx-auto" onsubmit="sendMail(event)">
                             <div class="flex flex-col md:gap-2 md:flex-row">
                                 <div class="w-full mb-4">
                                     <input type="text" id="name"
-                                        class="border border-gray-500 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-border dark:text-white dark:focus:ring-blue-500 dark:border-transparent"
+                                        class="border border-gray-500 text-black text-sm rounded-lg block w-full p-2.5 dark:bg-border dark:text-white dark:border-transparent"
                                         placeholder="Name*" required />
                                 </div>
                                 <div class="w-full mb-4">
                                     <input type="email" id="email"
-                                        class="border border-gray-500 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-border dark:text-white dark:focus:ring-blue-500 dark:border-transparent"
+                                        class="border border-gray-500 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-border dark:text-white dark:border-transparent"
                                         placeholder="Email*" required />
                                 </div>
                             </div>
@@ -237,15 +248,5 @@
 
 <script src="./js/main.js"></script>
 <script src="./js/email.js"></script>
-<!-- EmailJS -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-    (function () {
-        emailjs.init({
-            publicKey: "0cX2FCkzkSde3xbOm",
-        });
-    })();
-</script>
 
 </html>

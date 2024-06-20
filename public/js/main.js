@@ -28,18 +28,38 @@
 // });
 
 // DarkMode
-const desktopModeToggle = document.querySelector('#desktop-mode'); // Menggunakan id desktop-mode untuk toggle mode
+const desktopModeToggle = document.querySelector('#desktop-mode');
 const mobileModeToggle = document.querySelector('#mobile-mode');
 const html = document.querySelector('html');
 
-html.classList.add('dark'); // Menambahkan kelas 'dark' secara default
+// Fungsi untuk menyimpan preferensi mode ke localStorage
+function saveModePreference(isDarkMode) {
+    localStorage.setItem('darkMode', isDarkMode);
+}
+
+// Fungsi untuk memuat preferensi mode dari localStorage
+function loadModePreference() {
+    const isDarkMode = localStorage.getItem('darkMode');
+    if (isDarkMode !== null) {
+        html.classList.toggle('dark', isDarkMode === 'true');
+        desktopModeToggle.checked = isDarkMode === 'true';
+        mobileModeToggle.checked = isDarkMode === 'true';
+    }
+}
+
+// Muat preferensi mode saat halaman dimuat
+loadModePreference();
 
 desktopModeToggle.addEventListener('click', function () {
-  html.classList.toggle('dark', desktopModeToggle.checked); // Menggunakan toggle untuk menambah atau menghapus kelas 'dark'
+    const isDarkMode = desktopModeToggle.checked;
+    html.classList.toggle('dark', isDarkMode);
+    saveModePreference(isDarkMode); // Simpan preferensi mode saat tombol diklik
 });
 
 mobileModeToggle.addEventListener('click', function () {
-    html.classList.toggle('dark', mobileModeToggle.checked); // Menggunakan toggle untuk menambah atau menghapus kelas 'dark'
+    const isDarkMode = mobileModeToggle.checked;
+    html.classList.toggle('dark', isDarkMode);
+    saveModePreference(isDarkMode); // Simpan preferensi mode saat tombol diklik
 });
 
 
@@ -50,13 +70,13 @@ const mobileMenu = document.getElementById('mobile-menu');
 const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
 
 menuToggle.addEventListener('click', function () {
-  mobileMenu.classList.toggle('translate-x-full'); // Toggle menu slide-in
-  mobileMenuOverlay.classList.toggle('hidden'); // Toggle overlay visibility
+    mobileMenu.classList.toggle('translate-x-full'); // Toggle menu slide-in
+    mobileMenuOverlay.classList.toggle('hidden'); // Toggle overlay visibility
 });
 
 mobileMenuOverlay.addEventListener('click', function () {
-  mobileMenu.classList.add('translate-x-full'); // Menyembunyikan menu ketika overlay diklik
-  mobileMenuOverlay.classList.add('hidden'); // Menyembunyikan overlay
+    mobileMenu.classList.add('translate-x-full'); // Menyembunyikan menu ketika overlay diklik
+    mobileMenuOverlay.classList.add('hidden'); // Menyembunyikan overlay
 });
 
 

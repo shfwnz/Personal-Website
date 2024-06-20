@@ -1,16 +1,16 @@
 function sendMail(event) {
-    event.preventDefault();
+    event.preventDefault();  // Mencegah pengiriman form default
 
     var params = {
         name: document.getElementById("name").value,
         email: document.getElementById("email").value,
         message: document.getElementById("message").value,
     };
+    const serviceID = "service_dxs0xor";
+    const templateID = "template_30utir8";
 
-    const serviceID = "service_avbkn5m";
-    const templateID = "template_2z4ftsq";
-
-    emailjs.send(serviceID, templateID, params)
+    emailjs
+        .send(serviceID, templateID, params)
         .then((res) => {
             document.getElementById("name").value = "";
             document.getElementById("email").value = "";
@@ -19,4 +19,4 @@ function sendMail(event) {
             alert("Your message was sent successfully");
         })
         .catch((err) => console.log(err));
-}
+};
