@@ -33,19 +33,35 @@ document.addEventListener('DOMContentLoaded', function () {
     const mobileModeToggle = document.querySelector('#mobile-mode');
     const html = document.querySelector('html');
 
+    if (!desktopModeToggle || !mobileModeToggle) {
+        console.error('Element not found: desktopModeToggle or mobileModeToggle');
+        return;
+    }
+
     // Fungsi untuk menyimpan preferensi mode ke localStorage
     function saveModePreference(isDarkMode) {
-        localStorage.setItem('darkMode', isDarkMode);
+        try {
+            localStorage.setItem('darkMode', isDarkMode);
+            console.log('Mode preference saved:', isDarkMode);
+        } catch (error) {
+            console.error('Error saving to localStorage:', error);
+        }
     }
 
     // Fungsi untuk memuat preferensi mode dari localStorage
     function loadModePreference() {
-        const isDarkMode = localStorage.getItem('darkMode');
-        if (isDarkMode !== null) {
-            const darkModeEnabled = isDarkMode === 'true';
-            html.classList.toggle('dark', darkModeEnabled);
-            desktopModeToggle.checked = darkModeEnabled;
-            mobileModeToggle.checked = darkModeEnabled;
+        try {
+            const isDarkMode = localStorage.getItem('darkMode');
+            console.log('Loaded mode preference:', isDarkMode);
+            if (isDarkMode !== null) {
+                const darkModeEnabled = isDarkMode === 'true';
+                html.classList.toggle('dark', darkModeEnabled);
+                desktopModeToggle.checked = darkModeEnabled;
+                mobileModeToggle.checked = darkModeEnabled;
+                console.log('Dark mode enabled:', darkModeEnabled);
+            }
+        } catch (error) {
+            console.error('Error loading from localStorage:', error);
         }
     }
 
@@ -68,6 +84,7 @@ document.addEventListener('DOMContentLoaded', function () {
         toggleMode(mobileModeToggle.checked);
     });
 });
+
 
 // Hamburger
 const menuToggle = document.getElementById('mobile-menu-toggle');
