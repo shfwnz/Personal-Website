@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shfwn</title>
+    <title>shfwn</title>
+
+    <link rel="icon" class="h-8 rounded-full" href="assets/img/Kowalski.jpg" type="image/icon type"> 
+    
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/custom.css">
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,11 +23,11 @@
 
 <body class="dark:bg-dark dark:text-white">
     <nav
-        class="fixed top-0 z-10 flex items-center justify-between w-full px-4 py-6 md:px-0 md:mx-20 md:w-auto md:relative dark:bg-dark">
+        class="fixed top-0 z-10 flex items-center justify-between w-full px-4 py-6 bg-white md:px-0 md:mx-20 md:w-auto md:relative dark:bg-dark">
         <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse group">
             <img src="assets/img/Kowalski.jpg" class="h-8 rounded-full" alt="PP" />
             <span class="flex flex-row items-center self-center justify-center font-semibold whitespace-nowrap">
-                Shfwn
+                shfwn
                 <img src="assets/img/verified.png" class="w-6 ps-1" alt="verified">
             </span>
         </a>
@@ -44,7 +46,7 @@
 
         <!-- Menu dropdown untuk mobile -->
         <div id="mobile-menu"
-            class="fixed top-0 right-0 z-50 h-full overflow-y-auto text-white transition-transform duration-300 transform translate-x-full bg-dark w-60 md:hidden">
+            class="fixed top-0 right-0 z-50 h-full overflow-y-auto transition-transform duration-300 transform translate-x-full bg-white dark:text-white dark:bg-dark w-60 md:hidden">
             <ul class="pt-12 space-y-6">
                 <li><a href="index.html" class="block px-4 py-2">Home</a></li>
                 <li><a href="project.html" class="block px-4 py-2">Project</a></li>
@@ -147,57 +149,55 @@
                         </span>
                         <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
                             <!-- Skill Item -->
-                            <div class="relative flex items-center justify-center bg-white rounded dark:bg-border group">
-                                <a class="inline-flex flex-col items-center justify-center p-2" target="_blank" href="">
-                                    <img class="w-12 transition duration-300 ease-in-out group-hover:blur-sm"
-                                        src="assets/img/icon/css.png" alt="CSS Icon">
-                                    <span class="px-2 mt-2 text-gray-800 uppercase transition duration-300 ease-in-out opacity-0 dark:text-gray-200 group-hover:opacity-100">CSS</span>
-                                </a>
+                            <div
+                                class="relative flex items-center justify-center bg-white rounded dark:bg-border group">
+                                <div class="inline-flex flex-col items-center justify-center p-2">
+                                    <img class="w-12" src="assets/img/icon/css.png" alt="CSS Icon">
+                                    <span
+                                        class="px-2 mt-2 text-gray-800 uppercase opacity-100 dark:text-gray-200">CSS</span>
+                                </div>
                             </div>
                             <div class="relative flex items-center justify-center bg-white rounded dark:bg-border group">
-                                <a class="inline-flex flex-col items-center justify-center p-2" target="_blank" href="">
-                                    <img class="w-12 transition duration-300 ease-in-out group-hover:blur-sm"
-                                        src="assets/img/icon/js.png" alt="JavaScript Icon">
-                                    <span class="px-2 mt-2 text-gray-800 uppercase transition duration-300 ease-in-out opacity-0 dark:text-gray-200 group-hover:opacity-100">JavaScript</span>
-                                </a>
-                            </div>
-                            
-                            <div class="relative flex items-center justify-center bg-white rounded dark:bg-border group">
-                                <a class="inline-flex flex-col items-center justify-center p-2" target="_blank" href="">
-                                    <img class="w-12 transition duration-300 ease-in-out group-hover:blur-sm"
-                                        src="assets/img/icon/tailwind.png" alt="Tailwind Icon">
-                                    <span class="px-2 mt-2 text-gray-800 uppercase transition duration-300 ease-in-out opacity-0 dark:text-gray-200 group-hover:opacity-100">Tailwind</span>
-                                </a>
+                                <div class="inline-flex flex-col items-center justify-center p-2">
+                                    <img class="w-12" src="assets/img/icon/js.png" alt="JavaScript Icon">
+                                    <span class="px-2 mt-2 text-gray-800 uppercase opacity-100 dark:text-gray-200">JavaScript</span>
+                                </div>
                             </div>
                             
                             <div class="relative flex items-center justify-center bg-white rounded dark:bg-border group">
-                                <a class="inline-flex flex-col items-center justify-center p-2" target="_blank" href="">
-                                    <img class="w-12 transition duration-300 ease-in-out group-hover:blur-sm"
-                                        src="assets/img/icon/git.png" alt="Git Icon">
-                                    <span class="px-2 mt-2 text-gray-800 uppercase transition duration-300 ease-in-out opacity-0 dark:text-gray-200 group-hover:opacity-100">Git</span>
-                                </a>
+                                <div class="inline-flex flex-col items-center justify-center p-2">
+                                    <img class="w-12" src="assets/img/icon/tailwind.png" alt="Tailwind Icon">
+                                    <span class="px-2 mt-2 text-gray-800 uppercase opacity-100 dark:text-gray-200">Tailwind</span>
+                                </div>
                             </div>
+                            
                             <div class="relative flex items-center justify-center bg-white rounded dark:bg-border group">
-                                <a class="inline-flex flex-col items-center justify-center p-2" target="_blank" href="">
-                                    <img class="w-12 transition duration-300 ease-in-out group-hover:blur-sm"
-                                        src="assets/img/icon/figma.png" alt="Figma Icon">
-                                    <span class="px-2 mt-2 text-gray-800 uppercase transition duration-300 ease-in-out opacity-0 dark:text-gray-200 group-hover:opacity-100">Figma</span>
-                                </a>
+                                <div class="inline-flex flex-col items-center justify-center p-2">
+                                    <img class="w-12" src="assets/img/icon/git.png" alt="Git Icon">
+                                    <span class="px-2 mt-2 text-gray-800 uppercase opacity-100 dark:text-gray-200">Git</span>
+                                </div>
                             </div>
+                            
                             <div class="relative flex items-center justify-center bg-white rounded dark:bg-border group">
-                                <a class="inline-flex flex-col items-center justify-center p-2" target="_blank" href="">
-                                    <img class="w-12 transition duration-300 ease-in-out group-hover:blur-sm"
-                                        src="assets/img/icon/python.png" alt="Python Icon">
-                                    <span class="px-2 mt-2 text-gray-800 uppercase transition duration-300 ease-in-out opacity-0 dark:text-gray-200 group-hover:opacity-100">Python</span>
-                                </a>
+                                <div class="inline-flex flex-col items-center justify-center p-2">
+                                    <img class="w-12" src="assets/img/icon/figma.png" alt="Figma Icon">
+                                    <span class="px-2 mt-2 text-gray-800 uppercase opacity-100 dark:text-gray-200">Figma</span>
+                                </div>
                             </div>
+                            
                             <div class="relative flex items-center justify-center bg-white rounded dark:bg-border group">
-                                <a class="inline-flex flex-col items-center justify-center p-2" target="_blank" href="">
-                                    <img class="w-12 transition duration-300 ease-in-out group-hover:blur-sm"
-                                        src="assets/img/icon/golang.png" alt="Golang Icon">
-                                    <span class="px-2 mt-2 text-gray-800 uppercase transition duration-300 ease-in-out opacity-0 dark:text-gray-200 group-hover:opacity-100">Golang</span>
-                                </a>
-                            </div>                            
+                                <div class="inline-flex flex-col items-center justify-center p-2">
+                                    <img class="w-12" src="assets/img/icon/python.png" alt="Python Icon">
+                                    <span class="px-2 mt-2 text-gray-800 uppercase opacity-100 dark:text-gray-200">Python</span>
+                                </div>
+                            </div>
+                            
+                            <div class="relative flex items-center justify-center bg-white rounded dark:bg-border group">
+                                <div class="inline-flex flex-col items-center justify-center p-2">
+                                    <img class="w-12" src="assets/img/icon/golang.png" alt="Golang Icon">
+                                    <span class="px-2 mt-2 text-gray-800 uppercase opacity-100 dark:text-gray-200">Golang</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

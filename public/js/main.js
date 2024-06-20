@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 // Animate-Typing
-const words = ["FrontEnd Dev", "Web Dev", "Student"];
+const words = ["FrontEnd Dev", "Web Dev"];
 let i = 0;
 let j = 0;
 let currentWord = "";

@@ -4,7 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shfwn</title>
+  <title>shfwn</title>
+
+  <link rel="icon" class="h-8 rounded-full" href="assets/img/Kowalski.jpg" type="image/icon type">
+
   <link rel="stylesheet" href="css/style.css">
 
   <!-- Font -->
@@ -20,11 +23,11 @@
 <body class="dark:bg-dark dark:text-white">
   <header id="home" class="w-full h-screen">
     <nav
-      class="fixed top-0 z-10 flex items-center justify-between w-full px-4 py-6 md:px-0 md:mx-20 md:w-auto md:relative dark:bg-dark">
+      class="fixed top-0 z-10 flex items-center justify-between w-full px-4 py-6 bg-white md:px-0 md:mx-20 md:w-auto md:relative dark:bg-dark">
       <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse group">
         <img src="assets/img/Kowalski.jpg" class="h-8 rounded-full" alt="PP" />
         <span class="flex flex-row items-center self-center justify-center font-semibold whitespace-nowrap">
-          Shfwn
+          shfwn
           <img src="assets/img/verified.png" class="w-6 ps-1" alt="verified">
         </span>
       </a>
@@ -43,7 +46,7 @@
 
       <!-- Menu dropdown untuk mobile -->
       <div id="mobile-menu"
-        class="fixed top-0 right-0 z-50 h-full overflow-y-auto text-white transition-transform duration-300 transform translate-x-full bg-dark w-60 md:hidden">
+        class="fixed top-0 right-0 z-50 h-full overflow-y-auto transition-transform duration-300 transform translate-x-full bg-white dark:text-white dark:bg-dark w-60 md:hidden">
         <ul class="pt-12 space-y-6">
           <li><a href="index.html" class="block px-4 py-2">Home</a></li>
           <li><a href="project.html" class="block px-4 py-2">Project</a></li>
@@ -200,7 +203,7 @@
           </div>
           <div class="h-full p-5 dark:bg-secondary">
             <a href="#home">
-              <h5 class="mb-2 text-2xl font-bold tracking-tight">Shfwn.my.id </h5>
+              <h5 class="mb-2 text-2xl font-bold tracking-tight">shfwn.my.id </h5>
             </a>
             <p class="mb-3 font-normal">Personal Website built with tailwindcss and JavaScript</p>
           </div>
@@ -223,7 +226,9 @@
                   </div>
                   <hr class="my-3 border-gray-300">
                   <p class="hidden py-3 text-gray-500 md:flex">
-                    My name is Shafwan Ilham Dzaky and I am a vocational student majoring in Information Systems and Network Applications (SIJA). I have a deep interest in information technology, especially in application development and network management.
+                    My name is Shafwan Ilham Dzaky and I am a vocational student majoring in Information Systems and
+                    Network Applications (SIJA). I have a deep interest in information technology, especially in
+                    application development and network management.
                   </p>
                   <div class="flex flex-col justify-between py-4 pr-5 md:flex-row">
                     <div
@@ -279,10 +284,15 @@
 
   <!-- Back -->
   <a href="#home"
-    class="fixed bottom-4 right-4 z-[9999] hidden h-14 w-14 items-center justify-center rounded-full bg-secondary p-4 hover:animate-pulse"
+    class="fixed bottom-4 right-4 z-[9999] hidden h-14 w-14 items-center justify-center border dark:border-transparent rounded-full dark:bg-secondary p-4 hover:animate-pulse"
     id="to-top">
-    <span class="block w-5 h-5 rotate-45 border-t-2 border-l-2 border-white"></span>
+    <div class="flex items-center justify-center">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+      </svg>
+    </div>
   </a>
+
 </body>
 <script src="./js/main.js"></script>
 
