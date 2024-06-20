@@ -1,4 +1,4 @@
-// DarkMode
+//DarkMode
 document.addEventListener('DOMContentLoaded', function () {
     const desktopModeToggle = document.querySelector('#desktop-mode');
     const mobileModeToggle = document.querySelector('#mobile-mode');
@@ -30,6 +30,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 desktopModeToggle.checked = darkModeEnabled;
                 mobileModeToggle.checked = darkModeEnabled;
                 console.log('Dark mode enabled:', darkModeEnabled);
+            } else {
+                // Set default mode to dark if no preference is saved
+                html.classList.add('dark');
+                desktopModeToggle.checked = true;
+                mobileModeToggle.checked = true;
+                saveModePreference(true);
+                console.log('Default dark mode enabled');
             }
         } catch (error) {
             console.error('Error loading from localStorage:', error);
