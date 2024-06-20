@@ -198,14 +198,14 @@
                         <form class="w-full max-w-sm mx-auto">
                             <div class="flex flex-col md:gap-2 md:flex-row">
                                 <div class="w-full mb-4">
+                                    <input type="text" id="name"
+                                        class="border border-gray-500 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-border dark:text-white dark:focus:ring-blue-500 dark:border-transparent"
+                                        placeholder="Name*" required />
+                                </div>
+                                <div class="w-full mb-4">
                                     <input type="email" id="email"
                                         class="border border-gray-500 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-border dark:text-white dark:focus:ring-blue-500 dark:border-transparent"
                                         placeholder="Email*" required />
-                                </div>
-                                <div class="w-full mb-4">
-                                    <input type="text" id="subject"
-                                        class="border border-gray-500 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-border dark:text-white dark:focus:ring-blue-500 dark:border-transparent"
-                                        placeholder="Subject*" required />
                                 </div>
                             </div>
                             <div class="w-full mb-4">
@@ -236,11 +236,16 @@
 </body>
 
 <script src="./js/main.js"></script>
-<script>
-    // Script untuk toggle menu di mobile
-    document.getElementById('menu-toggle').addEventListener('change', function () {
-        document.getElementById('menu').classList.toggle('hidden');
-    });
+<script src="./js/email.js"></script>
+<!-- EmailJS -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+    (function () {
+        emailjs.init({
+            publicKey: "0cX2FCkzkSde3xbOm",
+        });
+    })();
 </script>
 
 </html>
