@@ -62,8 +62,6 @@ mobileModeToggle.addEventListener('click', function () {
     saveModePreference(isDarkMode); // Simpan preferensi mode saat tombol diklik
 });
 
-
-
 // Hamburger
 const menuToggle = document.getElementById('mobile-menu-toggle');
 const mobileMenu = document.getElementById('mobile-menu');
