@@ -41,26 +41,32 @@ function saveModePreference(isDarkMode) {
 function loadModePreference() {
     const isDarkMode = localStorage.getItem('darkMode');
     if (isDarkMode !== null) {
-        html.classList.toggle('dark', isDarkMode === 'true');
-        desktopModeToggle.checked = isDarkMode === 'true';
-        mobileModeToggle.checked = isDarkMode === 'true';
+        const darkModeEnabled = isDarkMode === 'true';
+        html.classList.toggle('dark', darkModeEnabled);
+        desktopModeToggle.checked = darkModeEnabled;
+        mobileModeToggle.checked = darkModeEnabled;
     }
 }
 
 // Muat preferensi mode saat halaman dimuat
 loadModePreference();
 
-desktopModeToggle.addEventListener('click', function () {
-    const isDarkMode = desktopModeToggle.checked;
+// Fungsi untuk mengubah mode dan menyimpan preferensi
+function toggleMode(isDarkMode) {
     html.classList.toggle('dark', isDarkMode);
-    saveModePreference(isDarkMode); // Simpan preferensi mode saat tombol diklik
+    saveModePreference(isDarkMode);
+}
+
+// Tambahkan event listener untuk toggle di desktop
+desktopModeToggle.addEventListener('change', function () {
+    toggleMode(desktopModeToggle.checked);
 });
 
-mobileModeToggle.addEventListener('click', function () {
-    const isDarkMode = mobileModeToggle.checked;
-    html.classList.toggle('dark', isDarkMode);
-    saveModePreference(isDarkMode); // Simpan preferensi mode saat tombol diklik
+// Tambahkan event listener untuk toggle di mobile
+mobileModeToggle.addEventListener('change', function () {
+    toggleMode(mobileModeToggle.checked);
 });
+
 
 // Hamburger
 const menuToggle = document.getElementById('mobile-menu-toggle');
