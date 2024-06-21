@@ -143,7 +143,7 @@ type();
 document.addEventListener("DOMContentLoaded", () => {
     const countdownElement = document.getElementById('countdown');
     let count = 999;
-    const target = 3;
+    const target = 2;
     const duration = 2000; // total duration in milliseconds
     const steps = 40; // number of steps to reach the target
     const intervalTime = duration / steps; // time per step in milliseconds
