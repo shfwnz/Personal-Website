@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>shfwn</title>
 
-    <link rel="icon" class="h-8 rounded-full" href="assets/img/Kowalski.jpg" type="image/icon type">
+    <link rel="icon" class="h-8 rounded-full" href="../assets/img/Kowalski.jpg" type="image/icon type">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
     <!-- Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -19,6 +19,9 @@
         rel="stylesheet">
     <!-- icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- EmailJS -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
@@ -35,20 +38,20 @@
 <body class="dark:bg-dark dark:text-white">
     <nav
         class="fixed top-0 z-10 flex items-center justify-between w-full px-4 py-6 bg-white md:px-0 md:mx-20 md:w-auto md:relative dark:bg-dark">
-        <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse group">
-            <img src="assets/img/Kowalski.jpg" class="h-8 rounded-full" alt="PP" />
+        <a href="../index.html" class="flex items-center space-x-3 rtl:space-x-reverse group">
+            <img src="../assets/img/Kowalski.jpg" class="h-8 rounded-full" alt="PP" />
             <span class="flex flex-row items-center self-center justify-center font-semibold whitespace-nowrap">
                 shfwn
-                <img src="assets/img/verified.png" class="w-6 ps-1" alt="verified">
+                <img src="../assets/img/verified.png" class="w-6 ps-1" alt="verified">
             </span>
         </a>
 
         <!-- Menu utama -->
         <ul id="menu" class="hidden space-x-6 md:flex">
-            <li><a href="index.html" class="text">Home</a></li>
-            <li><a href="project.html" class="text">Project</a></li>
-            <li><a href="about.html" class="text">About</a></li>
-            <li><a href="contact.html" class="text">Contact</a></li>
+            <li><a href="../index.html" class="text">Home</a></li>
+            <li><a href="../project/index.html" class="text">Project</a></li>
+            <li><a href="../about/index.html" class="text">About</a></li>
+            <li><a href="#" class="text">Contact</a></li>
         </ul>
 
         <!-- Overlay untuk menyembunyikan menu saat tidak digunakan -->
@@ -59,10 +62,10 @@
         <div id="mobile-menu"
             class="fixed top-0 right-0 z-50 h-full overflow-y-auto transition-transform duration-300 transform translate-x-full bg-white dark:text-white dark:bg-dark w-60 md:hidden">
             <ul class="pt-12 space-y-6">
-                <li><a href="index.html" class="block px-4 py-2">Home</a></li>
-                <li><a href="project.html" class="block px-4 py-2">Project</a></li>
-                <li><a href="about.html" class="block px-4 py-2">About</a></li>
-                <li><a href="contact.html" class="block px-4 py-2">Contact</a></li>
+                <li><a href="../index.html" class="block px-4 py-2">Home</a></li>
+                <li><a href="../project/index.html" class="block px-4 py-2">Project</a></li>
+                <li><a href="../about/index.html" class="block px-4 py-2">About</a></li>
+                <li><a href="#" class="block px-4 py-2">Contact</a></li>
                 <!-- Mode toggle hanya perlu ditampilkan di menu mobile -->
                 <li class="md:hidden">
                     <div class="block px-4 py-2">
@@ -99,7 +102,7 @@
             </button>
         </div>
     </nav>
-    <main class="px-4 mt-16 md:mt-0 md:px-6 lg:px-20">
+    <main class="px-4 mt-16 md:mt-0 md:px-6 lg:px-20" data-aos="fade-up" data-aos-duration="500">
         <section class="w-auto">
             <div class="flex flex-col mx-auto">
                 <div class="flex flex-col items-start justify-center mt-8 md:items-start md:mt-12">
@@ -124,7 +127,7 @@
                                 class="border border-transparent md:border-transparent rounded shadow-lg bg-[#8454B4] dark:bg-border hover:scale-105">
                                 <a class="inline-flex items-center justify-center p-2" target="_blank"
                                     href="https://www.instagram.com/shffky_">
-                                    <img class="w-12" src="assets/img/flaticon/icons8-insta-64.png">
+                                    <img class="w-12" src="../assets/img/flaticon/icons8-insta-64.png">
                                     <span class="px-2 font-bold text-white">Instagram</span>
                                 </a>
                             </div>
@@ -132,7 +135,7 @@
                                 class="border border-transparen md:border-transparent rounded bg-[#000000] dark:bg-border hover:scale-105">
                                 <a class="inline-flex items-center justify-center p-2" target="_blank"
                                     href="https://github.com/shfwnz">
-                                    <img class="w-12" src="assets/img/github.png">
+                                    <img class="w-12" src="../assets/img/github.png">
                                     <span class="px-2 font-bold text-white">Github</span>
                                 </a>
                             </div>
@@ -140,7 +143,7 @@
                                 class="bg-[#0078D4] border border-transparen md:border-transparent rounded dark:bg-border hover:scale-105">
                                 <a class="inline-flex items-center justify-center p-2" target="_blank"
                                     href="https://www.linkedin.com/in/shafwan-ilham-dzaky-2673872a7/">
-                                    <img class="w-12" src="assets/img/flaticon/icons8-linkedin-50.png">
+                                    <img class="w-12" src="../assets/img/flaticon/icons8-linkedin-50.png">
                                     <span class="px-2 font-bold text-white">Linkedin</span>
                                 </a>
                             </div>
@@ -150,7 +153,7 @@
                                 class="border border-transparen md:border-transparent rounded bg-[#8C9EFF] dark:bg-border hover:scale-105">
                                 <a class="inline-flex items-center justify-center p-2" target="_blank"
                                     href="https://discord.gg/Th2QYPwm">
-                                    <img class="w-12" src="assets/img/flaticon/icons8-discord-50.png">
+                                    <img class="w-12" src="../assets/img/flaticon/icons8-discord-50.png">
                                     <span class="px-2 font-bold text-white">Discord</span>
                                 </a>
                             </div>
@@ -158,7 +161,7 @@
                                 class="border border-transparen md:border-transparent rounded bg-[#29B6F6] dark:bg-border hover:scale-105">
                                 <a class="inline-flex items-center justify-center p-2" target="_blank"
                                     href="https://t.me/port_443false">
-                                    <img class="w-12" src="assets/img/flaticon/icons8-telegram-64.png">
+                                    <img class="w-12" src="../assets/img/flaticon/icons8-telegram-64.png">
                                     <span class="px-2 font-bold text-white">Telegram</span>
                                 </a>
                             </div>
@@ -170,7 +173,7 @@
                                         class="border md:border-transparent rounded shadow-lg dark:bg-border bg-[#8454B4] hover:scale-105 w-full">
                                         <a class="inline-flex items-center justify-center p-2" target="_blank"
                                             href="https://www.instagram.com/shffky_">
-                                            <img class="w-12" src="assets/img/flaticon/icons8-insta-64.png">
+                                            <img class="w-12" src="../assets/img/flaticon/icons8-insta-64.png">
                                             <span class="px-2 font-bold text-white">Instagram</span>
                                         </a>
                                     </div>
@@ -178,7 +181,7 @@
                                         class="w-full border border-transparen md:border-transparent rounded dark:bg-border bg-[#000000] hover:scale-105">
                                         <a class="inline-flex items-center justify-center p-2" target="_blank"
                                             href="https://github.com/shfwnz">
-                                            <img class="w-12" src="assets/img/github.png">
+                                            <img class="w-12" src="../assets/img/github.png">
                                             <span class="px-2 font-bold text-white">Github</span>
                                         </a>
                                     </div>
@@ -188,7 +191,7 @@
                                         class="w-full border border-transparen md:border-transparent rounded dark:bg-border bg-[#8C9EFF] hover:scale-105">
                                         <a class="inline-flex items-center justify-center p-2" target="_blank"
                                             href="https://discord.gg/Th2QYPwm">
-                                            <img class="w-12" src="assets/img/flaticon/icons8-discord-50.png">
+                                            <img class="w-12" src="../assets/img/flaticon/icons8-discord-50.png">
                                             <span class="px-2 font-bold text-white">Discord</span>
                                         </a>
                                     </div>
@@ -196,7 +199,7 @@
                                         class="w-full border border-transparen md:border-transparent rounded dark:bg-border bg-[#29B6F6] hover:scale-105">
                                         <a class="inline-flex items-center justify-center p-2" target="_blank"
                                             href="https://t.me/port_443false">
-                                            <img class="w-12" src="assets/img/flaticon/icons8-telegram-64.png">
+                                            <img class="w-12" src="../assets/img/flaticon/icons8-telegram-64.png">
                                             <span class="px-2 font-bold text-white">Telegram</span>
                                         </a>
                                     </div>
@@ -206,7 +209,7 @@
                                         class="bg-[#0078D4] border border-transparen md:border-transparent dark:bg-border rounded hover:scale-105 w-full justify-center flex">
                                         <a class="inline-flex items-center justify-center p-2" target="_blank"
                                             href="https://www.linkedin.com/in/shafwan-ilham-dzaky-2673872a7/">
-                                            <img class="w-12" src="assets/img/flaticon/icons8-linkedin-50.png">
+                                            <img class="w-12" src="../assets/img/flaticon/icons8-linkedin-50.png">
                                             <span class="px-2 font-bold text-white">Linkedin</span>
                                         </a>
                                     </div>
@@ -256,7 +259,11 @@
     </footer>
 </body>
 
-<script src="./js/main.js?ver=1.1"></script>
-<script src="./js/email.js"></script>
+<script src="../js/main.js?ver=1.1"></script>
+<script src="../js/email.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 </html>

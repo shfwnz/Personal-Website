@@ -65,20 +65,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 // Hamburger
-const menuToggle = document.getElementById('mobile-menu-toggle');
-const mobileMenu = document.getElementById('mobile-menu');
-const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+document.addEventListener('DOMContentLoaded', function () {
+    const menuToggle = document.getElementById('mobile-menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
 
-menuToggle.addEventListener('click', function () {
-    mobileMenu.classList.toggle('translate-x-full'); // Toggle menu slide-in
-    mobileMenuOverlay.classList.toggle('hidden'); // Toggle overlay visibility
+    menuToggle.addEventListener('click', function () {
+        mobileMenu.classList.toggle('translate-x-full'); // Toggle menu slide-in
+        mobileMenuOverlay.classList.toggle('hidden'); // Toggle overlay visibility
+    });
+
+    mobileMenuOverlay.addEventListener('click', function () {
+        mobileMenu.classList.add('translate-x-full'); // Menyembunyikan menu ketika overlay diklik
+        mobileMenuOverlay.classList.add('hidden'); // Menyembunyikan overlay
+    });
 });
-
-mobileMenuOverlay.addEventListener('click', function () {
-    mobileMenu.classList.add('translate-x-full'); // Menyembunyikan menu ketika overlay diklik
-    mobileMenuOverlay.classList.add('hidden'); // Menyembunyikan overlay
-});
-
 
 // CopyRight
 const copyrightElement = document.getElementById('copyright');

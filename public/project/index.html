@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>shfwn</title>
 
-    <link rel="icon" class="h-8 rounded-full" href="assets/img/Kowalski.jpg" type="image/icon type">
+    <link rel="icon" class="h-8 rounded-full" href="../assets/img/Kowalski.jpg" type="image/icon type">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,25 +19,29 @@
 
     <!-- icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body class="dark:bg-dark dark:text-white">
     <nav
         class="fixed top-0 z-10 flex items-center justify-between w-full px-4 py-6 bg-white md:px-0 md:mx-20 md:w-auto md:relative dark:bg-dark">
-        <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse group">
-            <img src="assets/img/Kowalski.jpg" class="h-8 rounded-full" alt="PP" />
+        <a href="../index.html" class="flex items-center space-x-3 rtl:space-x-reverse group">
+            <img src="../assets/img/Kowalski.jpg" class="h-8 rounded-full" alt="PP" />
             <span class="flex flex-row items-center self-center justify-center font-semibold whitespace-nowrap">
                 shfwn
-                <img src="assets/img/verified.png" class="w-6 ps-1" alt="verified">
+                <img src="../assets/img/verified.png" class="w-6 ps-1" alt="verified">
             </span>
         </a>
 
         <!-- Menu utama -->
         <ul id="menu" class="hidden space-x-6 md:flex">
-            <li><a href="index.html" class="text">Home</a></li>
-            <li><a href="project.html" class="text">Project</a></li>
-            <li><a href="about.html" class="text">About</a></li>
-            <li><a href="contact.html" class="text">Contact</a></li>
+            <li><a href="../index.html" class="text">Home</a></li>
+            <li><a href="#" class="text">Project</a></li>
+            <li><a href="../about/index.html" class="text">About</a></li>
+            <li><a href="../contact/index.html" class="text">Contact</a></li>
         </ul>
 
         <!-- Overlay untuk menyembunyikan menu saat tidak digunakan -->
@@ -48,10 +52,10 @@
         <div id="mobile-menu"
             class="fixed top-0 right-0 z-50 h-full overflow-y-auto transition-transform duration-300 transform translate-x-full bg-white dark:text-white dark:bg-dark w-60 md:hidden">
             <ul class="pt-12 space-y-6">
-                <li><a href="index.html" class="block px-4 py-2">Home</a></li>
-                <li><a href="project.html" class="block px-4 py-2">Project</a></li>
-                <li><a href="about.html" class="block px-4 py-2">About</a></li>
-                <li><a href="contact.html" class="block px-4 py-2">Contact</a></li>
+                <li><a href="../index.html" class="block px-4 py-2">Home</a></li>
+                <li><a href="#" class="block px-4 py-2">Project</a></li>
+                <li><a href="../about/index.html" class="block px-4 py-2">About</a></li>
+                <li><a href="../contact/index.html" class="block px-4 py-2">Contact</a></li>
                 <!-- Mode toggle hanya perlu ditampilkan di menu mobile -->
                 <li class="md:hidden">
                     <div class="block px-4 py-2">
@@ -88,7 +92,7 @@
             </button>
         </div>
     </nav>
-    <main>
+    <main data-aos="fade-up" data-aos-duration="500">
         <section class="w-full mt-12 md:mt-0">
             <div class="flex flex-col mx-4 md:mx-20">
                 <div class="flex flex-col justify-between mt-12 md:flex-row">
@@ -109,7 +113,7 @@
                         <div class="relative group">
                             <a href="">
                                 <img class="object-cover w-full h-48 rounded-t-lg hover:blur-sm"
-                                    src="./assets/img/epress.png" alt="Project-Img" />
+                                    src="../assets//img/epress.png" alt="Project-Img" />
                                 <div
                                     class="absolute inset-0 flex items-center justify-center transition-opacity duration-500 bg-black opacity-0 bg-opacity-60 group-hover:opacity-100">
                                     <span class="flex flex-row items-center text-lg text-white">
@@ -133,7 +137,7 @@
                         <div class="relative group">
                             <a href="https://ilhamaja.sija-bridge.tech/epres/" target="_blank">
                                 <img class="object-cover w-full h-48 rounded-t-lg group-hover:blur-sm"
-                                    src="./assets/img/epress.png" alt="Project-Img" />
+                                    src="../assets//img/epress.png" alt="Project-Img" />
                                 <div
                                     class="absolute inset-0 flex items-center justify-center transition-opacity duration-500 bg-black opacity-0 bg-opacity-60 group-hover:opacity-100">
                                     <span class="relative flex flex-row items-center text-lg text-white">
@@ -155,9 +159,9 @@
                     <div
                         class="w-full max-w-sm overflow-hidden transition-transform transform border border-transparent rounded-lg shadow-lg duration-550 hover:scale-105">
                         <div class="relative group">
-                            <a href="index.html">
+                            <a href="../index.html">
                                 <img class="object-cover w-full h-48 rounded-t-lg hover:blur-sm group-hover:blur-sm"
-                                    src="./assets/img/ini.png" alt="Project-Img" />
+                                    src="../assets//img/ini.png" alt="Project-Img" />
                                 <div
                                     class="absolute inset-0 flex items-center justify-center transition-opacity duration-500 bg-black opacity-0 bg-opacity-60 group-hover:opacity-100">
                                     <span class="flex flex-row items-center justify-center text-lg text-white">
@@ -168,7 +172,7 @@
                             </a>
                         </div>
                         <div class="h-full p-5 dark:bg-secondary">
-                            <a href="index.html">
+                            <a href="../index.html">
                                 <h5 class="mb-2 text-2xl font-bold tracking-tight">shfwn.my.id </h5>
                             </a>
                             <p class="mb-3 font-normal">Personal Website built with tailwindcss and JavaScript</p>
@@ -185,6 +189,9 @@
         </div>
     </footer>
 </body>
-<script src="./js/main.js?ver=1.1"></script>
-
+<script src="../js/main.js?ver=1.1"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </html>

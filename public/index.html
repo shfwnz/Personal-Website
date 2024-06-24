@@ -19,13 +19,16 @@
   <!-- icon -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 <body class="dark:bg-dark dark:text-white">
   <header id="home" class="w-full h-screen">
     <nav
       class="fixed top-0 z-10 flex items-center justify-between w-full px-4 py-6 bg-white md:px-0 md:mx-20 md:w-auto md:relative dark:bg-dark">
-      <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse group">
+      <a href="../index.html" class="flex items-center space-x-3 rtl:space-x-reverse group">
         <img src="assets/img/Kowalski.jpg" class="h-8 rounded-full" alt="PP" />
         <span class="flex flex-row items-center self-center justify-center font-semibold whitespace-nowrap">
           shfwn
@@ -35,10 +38,10 @@
 
       <!-- Menu utama -->
       <ul id="menu" class="hidden space-x-6 md:flex">
-        <li><a href="index.html" class="text">Home</a></li>
-        <li><a href="project.html" class="text">Project</a></li>
-        <li><a href="about.html" class="text">About</a></li>
-        <li><a href="contact.html" class="text">Contact</a></li>
+        <li><a href="#" class="text">Home</a></li>
+        <li><a href="project/index.html" class="text">Project</a></li>
+        <li><a href="about/index.html" class="text">About</a></li>
+        <li><a href="contact/index.html" class="text">Contact</a></li>
       </ul>
 
       <!-- Overlay untuk menyembunyikan menu saat tidak digunakan -->
@@ -49,10 +52,10 @@
       <div id="mobile-menu"
         class="fixed top-0 right-0 z-50 h-full overflow-y-auto transition-transform duration-300 transform translate-x-full bg-white dark:text-white dark:bg-dark w-60 md:hidden">
         <ul class="pt-12 space-y-6">
-          <li><a href="index.html" class="block px-4 py-2">Home</a></li>
-          <li><a href="project.html" class="block px-4 py-2">Project</a></li>
-          <li><a href="about.html" class="block px-4 py-2">About</a></li>
-          <li><a href="contact.html" class="block px-4 py-2">Contact</a></li>
+          <li><a href="#" class="block px-4 py-2">Home</a></li>
+          <li><a href="project/index.html" class="block px-4 py-2">Project</a></li>
+          <li><a href="about/index.html" class="block px-4 py-2">About</a></li>
+          <li><a href="contact/index.html" class="block px-4 py-2">Contact</a></li>
           <!-- Mode toggle hanya perlu ditampilkan di menu mobile -->
           <li class="md:hidden">
             <div class="block px-4 py-2">
@@ -86,7 +89,7 @@
         </button>
       </div>
     </nav>
-    <div class="flex flex-col py-6 mx-4 my-16 md:mx-12 lg:my-12">
+    <div class="flex flex-col py-6 mx-4 my-16 md:mx-12 lg:my-12" data-aos="fade-up" data-aos-duration="500">
       <div class="flex flex-col md:flex-row">
         <div class="flex flex-col items-center justify-start md:w-1/2">
           <div class="py-12 italic text-center md:text-right md:ps-12">
@@ -111,20 +114,20 @@
             </div>
           </div>
         </div>
-
       </div>
-    </div>
-    <div class="flex-col items-center justify-end hidden mx-auto mt-4 md:flex">
-      <img id="invert" src="./assets/img/mouse.png" alt="scroll" class="w-6 mb-2">
-      <span class="mt-1 mb-2 capitalize">scroll down</span>
-      <a href="#project">
-        <img id="invert" src="./assets/img/icons8-down-48.png" alt="scroll" class="w-6 mt-auto mb-0 animate-bounce">
-      </a>
+      <div class="flex-col items-center justify-end hidden mx-auto mt-4 md:flex">
+        <img id="invert" src="./assets/img/mouse.png" alt="scroll" class="w-6 mb-2">
+        <span class="mt-1 mb-2 capitalize">scroll down</span>
+        <a href="#project">
+          <img id="invert" src="./assets/img/icons8-down-48.png" alt="scroll" class="w-6 mt-auto mb-0 animate-bounce">
+        </a>
+      </div>
     </div>
   </header>
   <main id="project" class="w-full md:h-screen">
     <div class="flex flex-col mx-4 md:mx-20">
-      <div class="flex flex-row items-center justify-between space-y-4 md:flex-row mt-14 md:space-y-0 md:space-x-4">
+      <div class="flex flex-row items-center justify-between space-y-4 md:flex-row mt-14 md:space-y-0 md:space-x-4"
+        data-aos="fade-up" data-aos-duration="500">
         <div class="flex items-center">
           <span class="flex flex-row items-center text-xl font-bold capitalize md:text-2xl">
             <i class="pr-2 fas fa-rocket"></i>
@@ -132,7 +135,7 @@
           </span>
         </div>
         <div class="flex items-center">
-          <a href="project.html" class="flex flex-row items-center justify-center capitalize">
+          <a href="../project/index.html" class="flex flex-row items-center justify-center capitalize">
             view all
             <div class="px-2">
               <i class="fa-solid fa-arrow-right"></i>
@@ -140,7 +143,8 @@
           </a>
         </div>
       </div>
-      <div class="flex flex-col justify-start px-2 space-y-8 mt-14 md:space-y-0 md:space-x-4 md:flex-row">
+      <div class="flex flex-col justify-start px-2 space-y-8 mt-14 md:space-y-0 md:space-x-4 md:flex-row"
+        data-aos="fade-up" data-aos-duration="500">
         <div
           class="hidden w-full max-w-sm overflow-hidden transition-transform transform border border-transparent rounded-lg shadow-lg duration-550 hover:scale-105">
           <div class="relative group">
@@ -216,7 +220,8 @@
     <div class="gap-10 mx-4 md:mx-20 h-3/4">
       <div class="flex flex-row items-center justify-center px-2">
         <div id="about"
-          class="flex items-center justify-start mt-20 border-2 border-gray-500 rounded-lg dark:bg-secondary dark:border-transparent">
+          class="flex items-center justify-start mt-20 border-2 border-gray-500 rounded-lg dark:bg-secondary dark:border-transparent"
+          data-aos="fade-up" data-aos-duration="500">
           <div class="h-full max-w-full p-0">
             <div class="px-4 py-8 md:px-10">
               <div class="flex flex-col md:flex-row">
@@ -234,7 +239,7 @@
                   <div class="flex flex-col justify-between py-4 pr-5 md:flex-row">
                     <div
                       class="relative inline-flex items-center justify-start w-full px-6 py-3 mb-4 overflow-hidden font-medium transition-all border rounded md:border-none group md:mb-0 md:w-auto">
-                      <a href="about.html" class="w-full">
+                      <a href="../about/index.html" class="w-full">
                         <span
                           class="w-48 h-48 rounded rotate-[-40deg] bg-secondary dark:bg-white absolute bottom-0 left-0 -translate-x-full translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0 ease-out duration-700 transition-all"></span>
                         <span
@@ -246,7 +251,7 @@
                     </div>
                     <div
                       class="relative inline-flex items-center justify-start w-full px-6 py-3 overflow-hidden font-medium transition-all border rounded md:border-none group md:w-auto">
-                      <a href="contact.html" class="w-full">
+                      <a href="../contact/index.html" class="w-full">
                         <span
                           class="w-48 h-48 rounded rotate-[-40deg] bg-secondary dark:bg-white absolute bottom-0 left-0 -translate-x-full translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0 ease-out duration-700 transition-all"></span>
                         <span
@@ -296,5 +301,9 @@
 
 </body>
 <script src="./js/main.js?ver=1.1"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 </html>
